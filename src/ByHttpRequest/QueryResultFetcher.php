@@ -118,7 +118,7 @@ class QueryResultFetcher {
 	 */
 	public function doAuthenticateRemoteWiki( $credentials ) {
 
-		$cookiefile = tempnam(sys_get_temp_dir(), 'seql_'.time());
+		$cookiefile = tempnam(wfTempDir(), 'seql_'.time());
 
 		$httpRequest = $this->httpRequestFactory->newCurlRequest();
 
