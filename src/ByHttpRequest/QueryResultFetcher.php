@@ -66,6 +66,7 @@ class QueryResultFetcher {
 	 * @param HttpRequestFactory $httpRequestFactory
 	 * @param QueryResultFactory $queryResultFactory
 	 * @param JsonResponseParser $jsonResponseParser
+	 * @param array|bool $credentials
 	 */
 	public function __construct( HttpRequestFactory $httpRequestFactory, QueryResultFactory $queryResultFactory, JsonResponseParser $jsonResponseParser, $credentials ) {
 		$this->httpRequestFactory = $httpRequestFactory;
